@@ -1,0 +1,91 @@
+.indice{/* selector tipo class */
+    background-color: black;
+    color:rgba(8, 207, 238, 0.712);
+    font-family:Arial, Helvetica, sans-serif
+}
+/*La tabla tendrá fondo verde claro 
+    en sus celdas que no son cabecera y verde oscuro 
+    en aquellas celdas que si son cabecera. 
+    El borde de la tabla será de color verde oscuro y 
+    hecha con puntos, no con línea continua.*/
+.Tabla{
+    border-color:green;
+    border-style:dotted;
+}
+.Tabla thead th{/* selector tipo class */
+    background-color: green;
+    
+}
+.Tabla tbody th{
+    background-color: rgb(78, 216, 78);
+   
+}
+.Tabla tfoot td{
+    background-color: rgb(78, 216, 78);
+   
+}
+/*En la tabla, al pasar con el ratón encima 
+de las celdas que no son cabecera, el color 
+cambiará a naranja.*/
+.Tabla:hover tbody th{
+    background-color: orange;
+}
+.Tabla:hover tfoot td{
+    background-color: orange;
+}
+/*Los enlaces visitados serán de color morado 
+y los no visitados, de color azul. Esto se puede 
+aplicar a los enlaces internos del índice.*/
+#enlaces:link{
+    color:blue;
+}
+#enlaces:visited{
+    color:purple;
+}
+/*En el formulario, los campos que estén vacíos, 
+tendrán un color de fondo celeste.*/
+#campo1 imput:empty{
+    background-color: blue;
+}
+/*En el artículo con id=”Asignatura”, la primera línea del texto estára en negrita
+ y la primera letra estará en rojo, con un tamaño más grande 
+ y con un tipo de letra diferente al resto.*/
+#Asignatura::first-line{
+  font-weight: bold;
+}
+#Asignatura::first-letter{
+  color: red;
+  font-size: large;
+}
+#Asignatura:{
+  color: red;
+}
+ /*otra forma en la tabla
+thead th:nth-child(1) {
+    background-color: green;
+  }
+  thead th:nth-child(2) {
+    background-color: green;
+  }
+  thead th:nth-child(3) {
+    background-color: green;
+  }
+  tbody th:nth-child(1) {
+    background-color: rgb(78, 216, 78);
+  }
+  tbody th:nth-child(2) {
+    background-color: rgb(78, 216, 78);
+  }
+  tbody th:nth-child(3) {
+    background-color: rgb(78, 216, 78);
+  }
+  tfoot td:nth-child(1) {
+    background-color: rgb(78, 216, 78);
+  }
+  tfoot td:nth-child(2) {
+    background-color: rgb(78, 216, 78);
+  }
+  tfoot td:nth-child(3) {
+    background-color: rgb(78, 216, 78);
+  }
+  */

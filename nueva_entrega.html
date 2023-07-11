@@ -1,0 +1,225 @@
+<!DOCTYPE html> <!-- html5 + etiquetas semanticas -->
+<html>
+    <head>
+        <link href ="css/estilo1.css" rel="stylesheet" type ="text/css"/>
+        <link href ="js/logica1.js" type ="text/javascript"/>
+        <script>
+            function updateDisplay(val){
+                document.getElementById("contadorWeb").innerHTML = val
+                contadorclick++
+            }
+            var contadorclick = 0
+            document.addEventListener('click',function(evt){updateDisplay(contadorclick++)})
+        </script>
+    </head> 
+    <body style="background-color:#bdecf4;"><!-- Cuerpo --> 
+        
+        <header><!--Etiqueta semantica --><!--Cabecera de la parte body-->
+            <h3>Contador web:</h3> <!--Contador HTML--> 
+            <h3 id="contadorWeb">0</h3> <!--Contador HTML--> 
+            <title> WEB Proyecto Personal PARKING</title>
+            <meta http-equiv="refresh" content="60"/>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0"/><!--autoajustepagina -->
+            <meta name="description" content="Practica html5+css+js "/>
+            <meta name="keywords" content="FP,DAM, Cadiz"/>
+            <a href="/"></a><img alt="CES Juan Pablo II" src="img/ces.jpg" width="400x" height="200px"/>
+            <img alt="parking" src="img/parking.jpg" width="400x" height="200px"/>
+            <h1>WEB Proyecto Personal</h1>
+            <h2>PARKING CES</h2></a>
+            <meta charset="utf-8"/>
+            
+        </header>
+        <nav><!--Etiqueta semantica --><!--representa una sección de una página que enlaza con otras páginas o partes de la misma página: una sección con enlaces de navegación.-->
+             <!--Enlaces internos -->
+             
+            
+             <p >
+                <h4>Enlaces internos:</h4>
+                
+                    <a id="enlaces" href ="#Formulario"> Formulario </a><br/>
+                    <a id="enlaces" href ="#HorasParking"> Horas del Parking </a><br/>
+                    <a id="enlaces" href ="#TiempoCentro"> Tiempo en el Centro </a><br/>
+                    <a id="enlaces" href ="#Redes"> RRSS </a><br/>
+                    <a id="enlaces" href ="#FotosVideos"> Fotos y videos</a><br/>
+                    <a id="enlaces" href ="#Tabla">Tarifas</a><br/>
+                    <a id="enlaces" href ="#Asignatura">Asignatura preferida</a><br/>
+                
+            </p>
+           
+           
+        </nav>
+   
+        <main><!--Etiqueta semantica --><!--Parte principal de la página web-->
+            
+            <section><!--Etiqueta semantica --><!--. Partes en las que podemos dividir el bloque main-->
+                <article><!--. Artículos--></article>
+                <fieldset id="Formulario"> 
+                    <legend>Formulario:</legend>
+                        <form method="post" action="JAJAJ.html">
+                            
+                                <fieldset>
+                                    <legend>Datos: </legend>
+                                        <p>
+                                            <!--Tipo text -->
+                                            <label for="nombre">Nombre del usuario:</label>
+                                            <input id="campo1" type="text" name="nombre" 
+                                            placeholder="Nombre?" required/>
+                                        </p>
+                                        
+                                        <p>
+                                            <!--Tipo email -->
+                                            <label for="email">Introduzca email del ces:</label>
+                                            <input type="email" id="email"
+                                            pattern=".+@globex\.com" size="30" required>
+                                        </p>
+            
+                                        <p>
+                                            <!--Tipo file -->
+                                            <label for="foto">Adjuntar imagen del coche:</label>
+                                            <input type="file"id="foto" name="foto"
+                                            accept="image/png, image/jpeg">
+                                        </p>
+                                        <p>
+                                            <!--Tipo number -->
+                                            <label for="edadcoche">Introduzca año del coche:</label>
+                                            <input type="number" id="edad" name="edadcoche"
+                                            min="1" max="120">
+                                        </p>
+                                
+                                </fieldset>
+                        
+                                <fieldset id="HorasParking">
+                                    <legend>Horas parking:</legend>
+                                    <p>
+                                        <!--checkboxs con tres opciones -->
+                                        <label for="Horas">Horas en el parking</label><br/>
+                                        <input type="checkbox" name="Horas"
+                                        value="hora1"/>1<br/>
+                                        <input type="checkbox" name="Horas"
+                                        value="hora2"/>2<br/>
+                                        <input type="checkbox" name="Horas"
+                                        value="hora3"/>3<br/><br/>
+                                    </p>
+                                    
+                                </fieldset>
+                        
+                                <fieldset id="TiempoCentro">
+                                    <legend>Tiempo en el centro</legend>
+                                    <p>
+                                        <label for ="Tipomatriculacion">Tipo estancia usuario en el centro </label><br/>
+                                        <input type="radio" name="Tipomatriculacion"
+                                        value="TiempoParcial"checked/>Tiempo Parcial<br/>
+            
+                                        <input type="radio" name="Tipomatriculacion"
+                                        value="TiempoCompleto"checked/>Tiempo Completo<br/>
+                                        
+                                        <input type="radio" name="Tipomatriculacion"
+                                        value="TiempoCompleto"checked/>Tiempo ambas dependiendo del dia<br/>
+                                    </p>
+                                </fieldset>
+                    </legend>
+                        
+                                <!--Botones reset y submit -->
+                                <p>
+                                    <button type="reset">RESET</button>
+                                    <button type="submit">ENVIAR</button>
+                                    <button onclick="javascript:alert('Manuel Alberto Según López(DAM2)');">BOTON ALERTA</button>
+                                </p>
+                        
+                </fieldset> 
+            </section>
+            <section><!--Etiqueta semantica --><!--. Partes en las que podemos dividir el bloque main-->
+                <article><!--. Artículos--></article>
+                    <!--Enlaces internos -->
+                    <p>
+                        <h4>Indice:</h4>
+                        <ol class="indice">
+                            <li><a> Formulario </a></li>
+                            <li><a> Horas del Parking </a></li>
+                            <li><a> Tiempo en el Centro </a></li>
+                            <li><a> RRSS </a></li>
+                            <li><a> Fotos y videos</a></li>
+                            <li><a>Tarifas</a></li>
+                            <li><a>Asignatura preferida</a></li>
+                        </ol>
+                    </p>
+            </section>
+            <section>
+                <article><!--. Artículos--></article>
+                <!--rowspan="x"sirve para combinar celdas de una misma columna-->
+                        <!--colspan="x"sirve para combinar celdas de una misma fila-->
+                        <table class="Tabla">
+                            <colgroup>
+                                <col span ="2" style ="background-color:darkolivegreen">
+                                <col span ="1" style ="background-color:blueviolet">
+                            </colgroup>
+                            
+                            <caption>Tarifas</caption> 
+                            <thead> 
+                                <tr> <th>Tiempo</th> 
+                                     <th>horas</th> 
+                                     <th>Precio</th></tr> 
+                            </thead>
+                            <tbody>
+                                <tr> <th>Tiempo Completo</th> 
+                                     <th>6</th> 
+                                     <th>5</th></tr> 
+                                <tr> <th>Tiempo Parcial</th> 
+                                     <th>3</th> 
+                                     <th>4</th><tr> 
+                                <tr> <th>hora sueltas</th> 
+                                     <th>1</th> 
+                                     <th>4</th></tr> 
+                            </tbody>
+                            <tfoot>
+                                <tr><td bgcolor ="red" align = "center" rowspan="2" colspan="1">Curso</td> 
+                                    <td bgcolor ="orange" rowspan="1" colspan="2"> 2022/2023</td></tr>
+                                    <td bgcolor ="yellow" rowspan="1" colspan="2"> CES</td>
+                                    
+       
+                            </tfoot>
+                        </table>
+            </section>
+            <section>
+                <article id="Asignatura"><!--. Artículo d la asignatura -->
+                <p>Página en html5+css+javascript.<br/>Si deseas mas contenido, ponte en contacto conmigo por las redes sociales.</p>
+                <embed width ="800" type ="application/pdf" src="https://www.ticarte.com/sites/su/users/7/arch/desarrollo-aplicaciones-multiplataforma-boja.pdf"/>
+                </article>
+
+            </section>
+      
+        </main>
+        <aside id = FotosVideos><!--Etiqueta semantica --><!--Elemento exterior para bloques de publicidad, por ejemplo-->
+            
+            <img height="200" src="img/Parking.gif" alt="Parking image">
+            
+                <!--iMAGENES Y VIDEOS -->
+                <p>
+                <h5>Imagenes y video de interes:</h5>
+               <img alt="parking" src="https://circontrol.com/wp-content/uploads/2019/02/180125-Circontrol-BAIXA-80-1080x675.jpg" width="400x" height="200px"/>
+               <img alt="maps" src="https://esopiniones.com/map/586501.png" width="400x" height="200px"/><br/>
+               <video width ="400" height ="400" controls autoplay muted><source src ="multimedia/Cadiz.mp4" type ="video/mp4"/></video>
+               <video width ="400" height ="400" controls autoplay muted><source src ="multimedia/Caleta.mp4" type ="video/mp4"/></video>
+           
+        </aside>
+        <footer><!--Etiqueta semantica --><!--Pie pagina web -->
+             <!-- 4redes sociales -->
+             <p id="Redes">
+                <a href="https://www.instagram.com/"><img alt="Instagram"
+                src="https://elasq.com/wp-content/uploads/elementor/thumbs/instagram-icon2-p746ibw6pxxtdac0z73k7nlujqgof5w0lvbw5qsx60.png"
+                width="40px" height="40px"/></a>
+                <a href="https://www.facebook.com/"><img alt="Facebook"
+                src="https://elasq.com/wp-content/uploads/elementor/thumbs/facebook-icon-p9wzcu9upxtiwadb0mnwmnnwdgw61kerwr1bse3yco.png"
+                width="40px" height="40px"/></a>
+                <a href="https://twitter.com/"><img alt="Twitter"
+                src="https://elasq.com/wp-content/uploads/elementor/thumbs/tiwtter-icon1-pa1t7kmxadxzylg88a7iim2wsrdm4ngckb8jm1wa94.png"
+                width="40px" height="40px"/></a>
+                <a href="https://www.tiktok.com/en/"><img alt="TikTok"
+                src="https://img.icons8.com/ios-filled/344/tiktok--v1.png"
+                width="40px" height="40px"/></a>
+            </p>
+            <meta name="author" content="Manuel Alberto Segun Lopez"/>
+        </footer>
+        
+    </body>
+</html>
